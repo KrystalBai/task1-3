@@ -1,0 +1,25 @@
+/* 为做区别，改变颜色 */
+.left,.center,.right{
+    background-color: #eee;
+}
+.container{
+    background-color: #ddd;
+}
+
+/* 绝对定位版三栏布局 */
+.left,.right{
+    position: absolute;
+    top: 20px;
+}
+.container{
+    position: relative;
+}
+.center{
+    margin: 0 142px 0 222px;
+}
+.left{
+    left: 20px;
+}
+.right{
+    right: 20px;
+}

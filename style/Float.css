@@ -1,0 +1,18 @@
+/* 为做区别，改变颜色 */
+.left,.center,.right{
+    background-color: #ddd;
+}
+.container{
+    background-color: #ccc;
+}
+
+/* 浮动版三栏布局 */
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.center{
+    margin: 0 142px 0 222px;
+}

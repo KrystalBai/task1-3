@@ -1,0 +1,32 @@
+/* 为做区别，改变颜色 */
+.left,.wrap,.right{
+    background-color: #ccc;
+}
+.container,.center{
+    background-color: #bbb;
+}
+
+/* margin负值版三栏布局 */
+.left,.right,.center{
+    float: left;
+}
+.container{
+    height: 100%;
+    overflow: hidden;
+}
+.left{
+    margin-left: -100%;
+}
+.center{
+    padding: 0;
+    border: none;
+    width: 100%;
+}
+.center .wrap{
+    padding: 10px 20px;
+    border: 1px solid #999;
+    margin: 0 142px 0 222px;
+}
+.right{
+    margin-left: -122px;
+}

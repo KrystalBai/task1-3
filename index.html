@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Three Column Layout</title>
+    <link rel="shortcut icon" type="image/x-icon" href="logo.ico" />
+    <link href="style/style.css" rel="stylesheet">
+    <link href="style/Float.css" rel="alternate stylesheet" title="float">
+    <link href="style/Position.css" rel="alternate stylesheet" title="position">
+  </head>
+  <body>
+    <nav>
+      <a href="#" onclick="setActiveStyleSheet('default'); return false;">Default</a>
+      <a href="#" onclick="setActiveStyleSheet('position'); return false;">Position版</a>
+      <a href="#" onclick="setActiveStyleSheet('float'); return false;">Float版</a>
+      <a href="task1-3(2).html">Margin负值版（需改变html结构，见另一页）</a>
+    </nav>
+    <div class="container">
+      <div class="left"><img src="images/teamlogo.png" alt="logo" width="80"><h1>帝都小战队</h1>
+      </div>
+      <div class="right">
+        <img src="images/1.png" alt="Boyoung" width="80">
+        <img src="images/2.png" alt="Eunji" width="80">
+        <img src="images/3.png" alt="Darrin" width="80">
+      </div>
+      <div class="center">
+        <div>
+          <h2>Boyoung</h2>
+          <p>大家好，我是Boyoung~</p>
+          <p>热爱前端的有理想有志向的宅女一枚</p>
+          <p>前端菜鸟打怪晋级中。。。</p>
+        </div>
+        <div>
+          <h2>Eunji</h2>
+          <p>大家好，我是Eunji~</p>
+          <p>喜欢听音乐跑步追美剧，热爱前端</p>
+          <p>前端菜鸟打怪晋级中。。。</p>
+        </div>
+        <div>
+          <h2>Darrin</h2>
+          <p>大家好，我是Darrin~</p>
+          <p>爱好各种球类运动，动漫爱好者</p>
+          <p>前端菜鸟打怪晋级中。。。</p>
+        </div>
+      </div>
+    </div>
+
+
+<script>
+  function setActiveStyleSheet(title) {
+    var i, a, main;
+    for(i=0; (a = document.getElementsByTagName("link")[i]); i++) {
+      if(a.getAttribute("rel").indexOf("style") != -1 && a.getAttribute("title")) {
+        a.disabled = true;
+        if(a.getAttribute("title") == title) a.disabled = false;
+      }
+    }
+  }
+</script>
+  </body>
+</html>
